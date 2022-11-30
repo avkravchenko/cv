@@ -20,7 +20,7 @@ header {
     height: 100vh;
     width: 100vw;
     position: relative;
-    background: linear-gradient(to right, #000000, #00000007), url('img/workplace-with-headphones-laptop-evening-copy-space.jpg'); 
+    background: linear-gradient(to right, #000000, #00000007), url('img/workplace-with-headphones-laptop-evening-copy-space Large.jpeg'); 
     background-size: cover;
 }
 
@@ -68,4 +68,27 @@ header ul li {
 header ul li:hover {
     color: rgb(26, 134, 249);
     cursor: pointer;
+}
+
+#abmd {
+    width: 300px;
+    height: 600px;
+    color: aliceblue;
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    display: none;
+    animation-name: disp;
+    animation-duration: 3s;
+}
+
+#abmd p {
+    margin-bottom: 20px;
+}
+
+@keyframes disp {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
