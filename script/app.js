@@ -10,3 +10,5 @@ clickOnAboutMe.addEventListener('click', () => {
 clickOnMySkills.addEventListener('click', () => {
     showTextMySkills.classList.toggle('active');
 })
+
+
