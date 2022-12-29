@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+section {
+    background: url('img/beautiful-scenery-pathway-forest-with-trees-covered-with-frost_181624-42376.jpeg');
+    background-size: cover;
+    height: 100vh;
+}
+
 .content {
     max-width: 80%;
     margin: 0 auto;
@@ -12,132 +18,101 @@
 header {
     background-color: black;
     height: auto;
-    width: 100vw;
+    width: 100%;
 }
 
-.f_page {
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    background: linear-gradient(to right, #000000, #00000007), url('img/workplace-with-headphones-laptop-evening-copy-space Large.jpeg'); 
-    background-size: cover;
-}
-
-.f_s {
-    color: aliceblue;
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    animation-name: example;
-    animation-duration: 6s;
-}
-
-@keyframes example {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-.f_s:hover {
-    color: rgb(26, 134, 249);
-}
-
-.f_s p {
-    margin-top: 20px;
-}
-
-#ph img {
-    width: 300px;
-    border-radius: 100%;
-    position: absolute;
-    top: 15%;
-    left: 10%;
-}
-
-h1 {
-    font-weight: 600;
-    font-size: 50px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-header ul {
+header .nav{
     display: flex;
-    color: aliceblue;
-    justify-content: space-between;
+    width: 90%;
+    height: 60px;
     align-items: center;
-    height: 70px;
+    justify-content: space-around;
 }
 
-header ul li {
-    list-style: none;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-size: .7em;
-}
-
-header ul li:hover {
-    color: rgb(26, 134, 249);
-    cursor: pointer;
-}
-
-#abmd, #skills {
-    width: 300px;
-    height: 600px;
+header .nav li {
     color: aliceblue;
     font-family: 'Montserrat';
-    font-size: 0.9em;
-    position: absolute;
-    top: 20%;
-    left: 50%;
+    text-transform: uppercase;
+    list-style: none;
+    flex-direction: row;
+}
+
+header .nav li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.main-page {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    align-items: center;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.abot-me-link:hover {
+    cursor: pointer;
+}
+
+.about-me-text {
     display: none;
-    animation-name: disp;
-    animation-duration: 3s;
 }
 
-#ph {
+.about-me-text.active {
+    display: block;
+}
+
+.skills-text {
     display: none;
+    cursor: pointer;
 }
 
-#photo {
-    transition: 2s;
-    animation-duration: 2s;
+.skills-text.active {
+    display: block;
 }
 
-#ph img {
-    animation-name: disp;
-    animation-duration: 3s;
+.blocks {
+    height: auto;
+    position: relative;
+    backdrop-filter: blur(50px);
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 60px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Montserrat';
+    border-radius: 20px;
+    transition: height 1s;
 }
 
-#abmd p {
-    margin-bottom: 20px;
-}
 
-#skills p {
-    margin-bottom: 20px;  
-}
-
-@keyframes disp {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@media screen and (max-width: 970px) {
-    #abmd, #skills {
-        width: 600px;
-        height: 200px;
+@media screen and (max-width: 768px){
+    .blocks {
+        position: relative;
+        backdrop-filter: blur(50px);
+        margin: 0 auto;
+        max-width: 80%;
+        padding: 20px;
         color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
         font-family: 'Montserrat';
-        font-size: 0.9em;
-        position: absolute;
-        top: 55%;
-        left: 10%;
+        border-radius: 20px;
     }
+}
 
-    .f_page {
-        background: linear-gradient(to top, #000000, #00000007), url('img/workplace-with-headphones-laptop-evening-copy-space Large.jpeg'); 
-        background-size: cover;
-        height: 100vh;
+@media screen and (max-width: 480px){
+    .blocks {
+        font-size: .9rem;
     }
 }

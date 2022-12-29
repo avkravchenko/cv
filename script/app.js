@@ -1,23 +1,12 @@
-function myF() {
-    document.getElementById("abmd").style.display = "block";
-    document.getElementById("skills").style.display = "none";
-    document.getElementById("ph").style.display = "none";
-    document.getElementById("photo").style.transform = "translate(0, 0)";
-}
+const clickOnAboutMe = document.querySelector('.abot-me');
+const showTextAboutMe = document.querySelector('.about-me-text');
+const clickOnMySkills = document.querySelector('.my-skills');
+const showTextMySkills = document.querySelector('.skills-text');
 
-function myS() {
-    document.getElementById("abmd").style.display = "none";
-    document.getElementById("skills").style.display = "block";
-    document.getElementById("ph").style.display = "none";
-    document.getElementById("photo").style.transform = "translate(0, 0)";
-}
 
-function myP() {
-    document.getElementById("ph").style.display = "block";
-    document.getElementById("abmd").style.display = "none";
-    document.getElementById("skills").style.display = "none";
-    document.getElementById("photo").style.transform = "translate(0, 150px)";
-
-}
-
-console.log('hello');
+clickOnAboutMe.addEventListener('click', () => {
+    showTextAboutMe.classList.toggle('active');
+})
+clickOnMySkills.addEventListener('click', () => {
+    showTextMySkills.classList.toggle('active');
+})
