@@ -19,7 +19,7 @@ p::first-letter {
 }
 
 .blocks .name p::first-letter {
-    margin-left: none;
+    margin-left: 0;
 }
 
 .content {
