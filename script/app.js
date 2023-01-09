@@ -11,4 +11,3 @@ clickOnMySkills.addEventListener('click', () => {
     showTextMySkills.classList.toggle('active');
 })
 
-
